@@ -1,0 +1,730 @@
+<html lang="de" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Langlam - Habbo</title>
+    <link rel="stylesheet" href="https://habbo.st/public/assets/pix/css/main.css?stable">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" id="theme-styles">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   
+</head>
+
+<body id="body">
+
+
+<div class="alerts-wrapper" id="alertsWrapper"></div>
+<div class="root" id="root">
+    <div class="top">
+        <i class="nav-menu" onclick="toggleMenu('nav', 'groups')"></i>
+        <div class="wrapper">
+            <a class="me" href="/profile.html">
+                <div class="me-img-wrapper">
+                    <img src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=lg-275-79.hr-100-32.hd-209-1390.ha-1015-62.ch-215-1286.sh-906-62&amp;direction=2&amp;head_direction=3&amp;action=wav&amp;size=m&amp;gesture=sml" alt="Langlam">
+                </div>
+                <div class="me-info-wrapper">
+                    <span class="after ">Langlam </span> 
+                    <p>Ich bin neu im Habbo, sagt Hi!</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="groups" id="groups">
+        <div class="groups-icon-wrapper">
+            <i class="groups-sprite"></i>
+        </div>
+        <ul class="groups-list">
+
+
+        
+                <li class="groups-list-item" onmouseenter="tooltipLeft('group100')" onmouseleave="tooltipLeft('group100')" id="group100">
+                    <a href="/groups/100">
+                        <img class="groups-list-item-badge" src="https://images.habbo.st/habbo-imaging/badge/b05044s204114.gif" alt="">
+                        <img class="groups-list-item-background" src="https://habbo.st/public/assets/pix/img/rooms/7.png" alt="">
+                    </a>
+                    <span class="groups-list-item-tooltip" id="group100_tooltipLeft">
+                        Vegan                        <svg height="16px" width="8px">
+                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                        </svg>
+                    </span>
+                </li>
+
+            
+                <li class="groups-list-item" onmouseenter="tooltipLeft('group101')" onmouseleave="tooltipLeft('group101')" id="group101">
+                    <a href="/groups/101">
+                        <img class="groups-list-item-badge" src="https://images.habbo.st/habbo-imaging/badge/b05114s03137s06104.gif" alt="">
+                        <img class="groups-list-item-background" src="https://habbo.st/public/assets/pix/img/rooms/5.png" alt="">
+                    </a>
+                    <span class="groups-list-item-tooltip" id="group101_tooltipLeft">
+                        Dark Soul &lt;3                        <svg height="16px" width="8px">
+                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                        </svg>
+                    </span>
+                </li>
+
+            
+                <li class="groups-list-item" onmouseenter="tooltipLeft('group102')" onmouseleave="tooltipLeft('group102')" id="group102">
+                    <a href="/groups/102">
+                        <img class="groups-list-item-badge" src="https://images.habbo.st/habbo-imaging/badge/b02134s14014s42014s183113s193115.gif" alt="">
+                        <img class="groups-list-item-background" src="https://habbo.st/public/assets/pix/img/rooms/2.png" alt="">
+                    </a>
+                    <span class="groups-list-item-tooltip" id="group102_tooltipLeft">
+                        AUSSERKONTROLLE                        <svg height="16px" width="8px">
+                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                        </svg>
+                    </span>
+                </li>
+
+                    </ul>
+    </div>
+
+<div id="tooltipWrapper"></div>
+
+    <nav class="main-navigation" id="nav">
+        <i class="close-sprite" onclick="toggleMenu('nav', 'groups')"></i>
+        <a class="logo" href="/me">
+            <i class="logo-sprite"></i>
+            <h1>Habbo.st</h1>
+        </a>
+        <div class="main-navigation-wrapper">
+            <div class="main-navigation-content-wrapper">
+                <!--<h2>Navigation</h2>-->
+                <h3>Langlam</h3>
+                <ul class="main-navigation-list">
+                    <li class="main-navigation-list-item">
+                        <a class="active" href="/me">Ich</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="/home/Langlam">Profil</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="/settings">Einstellungen</a>
+                    </li>
+                </ul>
+                <h3>Community</h3>
+                <ul class="main-navigation-list">
+                    <li class="main-navigation-list-item">
+                        <a href="/community">Fotos</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                                                <a href="/articles/257">Neuigkeiten</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="/community/staffs">Mitarbeiter</a>
+                    </li>
+					<li class="main-navigation-list-item">
+                        <a href="/community/ehrenamt">Ehrenamt</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="/community/premium">Premium</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="/community/topuser">Hall Of Fame</a>
+                    </li>
+					<li class="main-navigation-list-item">
+                        <a href="/badgecreator">Badgecreator</a>
+                    </li>
+                </ul>
+                <h3>Sonstiges</h3>
+                <ul class="main-navigation-list">
+				<li class="main-navigation-list-item">
+                        <a href="https://app.habbo.st" target="_blank">Download</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="https://habbowert.st" target="_blank">Preisliste</a>
+                    </li>
+                    <li class="main-navigation-list-item">
+                        <a href="https://ucp.habbo.st/regelwerk_allgemein" target="_blank">Regelwerk</a>
+                    </li>
+					<li class="main-navigation-list-item">
+                        <a href="/playing-habbo/crafting">Crafting</a>
+                    </li>
+					<li class="main-navigation-list-item">
+                        <a href="https://help.habbo.st/" target="_blank">Hilfe</a>
+                    </li>
+					<li class="main-navigation-list-item">
+                        <a href="https://store.habbo.st" style="color: #ef5c99;" target="_blank">Store 🛒</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-navigation">
+                <h3>Habbo.st</h3>
+                <ul class="footer-navigation-list">
+                    <li class="footer-navigation-list-item">
+                        <a id="theme_toggle" href="#" onclick="changeTheme();">Light Mode</a>
+                    </li>
+                    <li class="footer-navigation-list-item">
+                        <a href="/impressum">Impressum</a>
+                    </li>
+                    <li class="footer-navigation-list-item">
+                        <a href="/playing-habbo/safety">Sicherheit</a>
+                    </li>
+                    <li class="footer-navigation-list-item">
+                        <a target="_blank" href="https://discord.habbo.st/">Discord Server</a>
+                    </li> 
+                    <li class="footer-navigation-list-item">
+                        <a style="color: #e74c3c;" href="/logout">Abmelden</a>
+                    </li>
+                    <li class="footer-navigation-list-item"><br>
+                        <a href="https://top.gg/bot/730544745960701974" target="_blank">
+                        <img src="https://top.gg/api/widget/status/730544745960701974.svg" alt="Mio"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="hero">
+            <div class="wrapper">
+                <i class="logo-sprite"></i>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper">
+                <div class="attention">
+                <img src="https://i.imgur.com/KV90yRU.png" alt=""> 
+                   <p>Hey <b>Langlam</b>! Ändere bitte <b>umgehend</b> dein Passwort. <a href="/settings" style="color: #f9c91c;">Klicke hier</a>, um dein Passwort zu ändern.</p>
+                </div>
+            </div>
+            <i class="friends-menu" onclick="toggleMenu('friends', 'searchUser')"></i>
+        </div>
+        <script type="text/javascript">
+            function checkAuction() {
+                if(document.forms["auctionForm"]["auctionInput"].value !== "") {
+                    $("#notificationAuction .notification").remove();
+                
+                    $.ajax({
+                        type: 'POST',
+                        url:'/auction.php',
+                        data: { action: "auction", amount: document.forms["auctionForm"]["auctionInput"].value, auction: "ajax" },
+                        success: function(data, textStatus, request){
+                            if(request.responseText == "not_an_integer") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Bitte gib eine Zahl ein.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "invalid_amount") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Der Höchstbietende muss überboten werden.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "not_logged_in") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Du bist nicht mehr angemeldet. Lade die Seite neu.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "user_not_found") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Dein Benutzer existiert nicht (mehr).<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "not_enough_money") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Du hast nicht genug Geld, um diese Summe zu bieten!<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "unknown_error") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Technischer Fehler! Versuche es später nochmal.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "auction_not_found") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Die Auktion ist bereits abgelaufen.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                            }
+                            else if(request.responseText == "success") {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification' style='background-color: #23C552'>Erfolgreich geboten! Die Seite wird neu geladen.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#23C552' /></svg></span>";
+                                setTimeout(function() {
+                                    window.location.replace("/me");
+                                }, 3000);
+                            }
+                            else {
+                                document.getElementById("notificationAuction").innerHTML += "<span class='notification' style='background-color: #000'>In Entwicklung!<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#000' /></svg></span>";
+                            }
+                        },
+                        error: function (request, textStatus, errorThrown) {
+                            document.getElementById("notificationAuction").innerHTML += "<span class='notification'>Technischer Fehler! Versuche es später nochmal.<svg width='18px' height='18px'><path d='M 0 9 L 9 0 L 9 18 L 0 9' fill='#d63031' /></svg></span>";
+                        }
+                    });
+                }
+            }
+
+            function formatNumber(num) {
+                num = num.replace(/[^0-9]/g, "");
+                return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+            }
+
+            $(document).ready(function(){
+
+                $('#auctionInput').on('propertychange input', function (e) {
+                    var valueChanged = false;
+
+                    if (e.type=='propertychange') {
+                        valueChanged = e.originalEvent.propertyName=='value';
+                    } else {
+                        valueChanged = true;
+                    }
+                    if (valueChanged) {
+                        var currentValue = $('#auctionInput').val();
+                        var formattedValue = formatNumber(currentValue);
+                        $('#auctionInput').val(formatNumber(currentValue));
+                    }
+                });
+            });
+        </script>
+
+        <style>
+        .wrapper-notification {
+            position: relative;
+        }
+        .wrapper-notification > .notification {
+            position: absolute;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            -webkit-transform: translate(100%, calc(50% - 8.5px));
+                -ms-transform: translate(100%, calc(50% - 8.5px));
+                    transform: translate(100%, calc(50% - 8.5px));
+            top: -12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 12px;
+            border-radius: 5px;
+            background-color: #d63031;
+            color: #fff;
+            right: -20px;
+            opacity: 1;
+            z-index: 100;
+            -webkit-animation-name: notification;
+                    animation-name: notification;
+            -webkit-animation-duration: .25s;
+                    animation-duration: .25s;
+        }
+        @-webkit-keyframes notification {
+            0% {
+                right: 0;
+                opacity: 0;
+            }
+            100% {
+                right: -20px;
+                opacity: 1;
+            }
+        }
+        @keyframes notification {
+            0% {
+                right: 0;
+                opacity: 0;
+            }
+            100% {
+                right: -20px;
+                opacity: 1;
+            }
+        }
+
+        .wrapper-notification > .notification svg {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            left: -8px;
+        }
+        </style>
+
+        <div class="wrapper">
+            <div class="content">
+                <div class="content-left">
+                    <h2>Aktueller Artikel</h2>
+                                        <div class="news" style="background-image: url('https://imgur.com/UctmOdO.png');">
+                        <h4>Geburtstage im Hotel                            </h4>
+                        <div class="news-info">
+                            <p>Jetzt kannst du dein Geburtsdatum speichern!</p>
+                            <a href="/articles/257">Mehr erfahren</a>
+                        </div>
+                    </div>
+                                        <h2>Auktionshaus</h2>
+                    <div class="auction">
+                                                    <div class="auction-display">
+                                    <div class="auction-info">
+                                        <div class="auction-time">
+                                            <i class="clock-sprite"></i>
+                                            <span>Auktion demnächst verfügbar!</span>
+                                        </div>
+                                    </div>
+                                    <img class="rare" src="https://miau.habbo.st/swfz/c_images/notifications/reward-2.png" alt="">
+                                </div>
+                                <div class="auction-info">
+                                    <h3>Information</h3>
+                                    <div class="auction-info-user">
+                                        <div class="auction-info-user-img-wrapper">
+                                            <img class="auction-info-user-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=hd-180-10.lg-285-64.hr-3011-41.sh-290-92.ch-3032-110-92.fa-1208-62.ha-3129-73.cc-3039-73" alt="">
+                                            <img class="auction-info-user-img-background" src="https://habbo.st/public/assets/pix/img/rooms/2.png" alt="">
+                                        </div>
+                                        <div class="auction-info-user-wrapper">
+                                            <a href=""><span class="after hc">Frank</span></a>
+                                            <p>Gleich geht's weiter!</p>
+                                        </div>
+                                    </div>
+                                    <h3><span>Kein Gebot möglich.</span></h3>
+                                    <form class="" action="index.html" method="post">
+                                        <input type="text" name="" value="" disabled="">
+                                        <button class="auction-send" type="button" name="button" disabled="">Bieten</button>
+                                    </form>
+                                </div>
+                                <div class="auction-timeline">
+                                    <ul>
+                                        <li>
+                                            <div class="auction-timeline-user"></div>
+                                        </li>
+                                        <li>
+                                            <div class="auction-timeline-user"></div>
+                                        </li>
+                                        <li>
+                                            <div class="auction-timeline-user"></div>
+                                        </li>
+                                        <li>
+                                            <div class="auction-timeline-user"></div>
+                                        </li>
+                                        <li>
+                                            <div class="auction-timeline-user"></div>
+                                        </li>                                   
+                                    </ul>
+                                </div>
+                                                </div>
+                </div>
+                
+                <div class="content-right">
+                    <h2>Letzte Artikel</h2>
+                    <ul class="news-list">
+
+                                                <li class="news-list-item" style="background-image: url('https://images.habbo.com/web_images/habbo-web-articles/wpid-lpromo_gen_fan_3.png');">
+                            <h4>Aktuelles rund um das Hotel</h4>
+                            <a href="/articles/256">mehr erfahren</a>
+                        </li>
+
+
+                                                <li class="news-list-item" style="background-image: url('https://images.habbo.com/web_images/habbo-web-articles/lpromo_vaporwavevibes21.png');">
+                            <h4>Impfen oder nicht?</h4>
+                            <a href="/articles/255">mehr erfahren</a>
+                        </li>
+
+
+                                                <li class="news-list-item" style="background-image: url('https://i.imgur.com/2wqr7cV.png');">
+                            <h4>Raum des Monats #17</h4>
+                            <a href="/articles/254">mehr erfahren</a>
+                        </li>
+
+
+                                            </ul>
+
+                   <!-- <h2>Meiste Boxen losgeworden</h2>
+                    <div class="habbo-display">
+                        <div class="habbo-display-habbo">
+                            <img src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=ch-665-70.lg-700-95.hr-3090-33.wa-2006-62.sh-735-68.hd-3106-1" alt="">
+                        </div>
+                        <div class="habbo-display-info">
+                                    <span class="after hotw">
+                                        <a href="profile.html">Mardin</a>
+                                    </span>
+                            <p>Schutzgelderpresser</p>
+                        </div>
+                    </div> -->
+
+                <div class="content-right">
+                <div class="sticky-wrapper">
+                    <h2>Unterstütze das Hotel 💑</h2>
+                    <div class="box">
+                        <p>Dank dir ist Habbo.st etwas großartiges. Habbo.st verwendet hochwertige Server und setzt auf Sicherheit mit Qualität, um einen reibungslosen Betrieb gewährleisten zu können. Wir geben unser Bestes, um dir und deinen Freunden ein unvergessliches Spielerlebnis bieten zu können.<br>
+						<br>Unterstütze das Hotel, indem du dir etwas in unserem Store kaufst. Alle Einnahmen fördern den weiteren Werdegang und Fortbestand des Hotels. <a href="https://store.habbo.st" target="_blank">Klicke hier</a>, um zum Store zu gelangen.</p>
+                    </div>
+                </div>
+            </div>
+
+					<!--<h2>TikTok</h2>
+                    <div class="box img">
+                        <p>Werde Teil unserer TikTok Community und verpasse keine Videos!<br><a href="https://www.tiktok.com/@habbo.st?lang=de" target="_blank">Jetzt folgen!</a></p>
+                        <img src="https://habbo.st/public/assets/pix/img/backgrounds/tiktok.png" alt="">
+                    </div>-->
+                    <h2>Discord</h2>
+                    <div class="box img">
+                        <p>Werde Teil unseres Discord-Servers und erweitere deinen Habbo-Spaß!<br><a href="https://discord.habbo.st/" target="_blank">Jetzt beitreten!</a></p>
+                        <img src="https://habbo.st/public/assets/pix/img/backgrounds/discord.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<a class="join" href="/hotelv2">
+    <i class="key-sprite"></i>
+    <span>Betrete Habbo</span>
+    <svg>
+        <path d="m 100 0 L 50 0 L 0 75 L 50 75"></path>
+    </svg>
+</a>
+
+<div class="friends" id="friends">
+    <i class="close-sprite" onclick="toggleMenu('friends', 'searchUser')"></i>
+    <h2>Meine Freunde</h2>
+<div class="friends-counter">
+    <div class="friends-counter-wrapper">
+        <span class="friends-count">0</span>
+        <span class="friends-total">0</span>
+    </div>
+</div>
+                <div class="friends-empty" onclick="autoFocus('searchUserInput')">
+                <div class="friends-empty-img-wrapper">
+                    <i class="empty-head-sprite"></i>
+                    <img class="friends-empty-img-background" src="https://habbo.st/public/assets/pix/img/rooms/1.png" alt="">
+                </div>
+                <div class="friends-empty-info-wrapper">
+                    <span>MOF</span>
+                    <p>Finde einen Freund...</p>
+                </div>
+            </div>
+            <form class="search-user" action="#" method="post" id="searchUser">
+        <input id="searchUserInput" type="text" name="searchUserInput" value="" placeholder="Finde einen Habbo...">
+        <input id="searchUserInputSubmit" type="hidden" name="searchUserInputSubmit" value="">
+    </form>
+</div>
+</div>
+
+<div class="friend-window-content">
+
+
+
+</div>
+
+<div class="quick-profile-content">
+
+</div>
+<div class="quick-profile-content">
+    <div class="quick-profile" id="flughafenQuickProfile">
+        <div class="quick-profile-top">
+            <div class="quick-profile-habbo-wrapper">
+                <a class="quick-profile-top-profile-img" href="profile.html">
+                    <img class="quick-profile-top-profile-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=lg-5635282-1189.sh-3016-1228.ch-3185-62.ea-1401-110.hr-1181032-45.cc-156282-1228.hd-3095-2&amp;headonly=0&amp;direction=3&amp;head_direction=3&amp;size=l" alt="">
+                    <img class="quick-profile-top-profile-img-background" src="https://habbo.st/public/assets/pix/img/rooms/4.png" alt="">
+                </a>
+                <div class="quick-profile-top-infos">
+                    <span>Flughafen</span>
+                    <ul class="quick-profile-top-badges-list">
+                        <li class="quick-profile-top-badges-list-item">
+                            <img src="public/assets/newcms/img/icons/adm.png" alt="">
+                            <span class="quick-profile-top-badges-list-item-tooltip">
+                                        Administrator
+                                        <svg height="16px" width="8px">
+                                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                                        </svg>
+                                    </span>
+                        </li>
+                        <li class="quick-profile-top-badges-list-item">
+                            <img src="public/assets/newcms/img/icons/unicorn.png" alt="">
+                            <span class="quick-profile-top-badges-list-item-tooltip">
+                                        I &lt;3 Habbo.st
+                                        <svg height="16px" width="8px">
+                                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                                        </svg>
+                                    </span>
+                        </li>
+                        <li class="quick-profile-top-badges-list-item">
+                            <img src="public/assets/newcms/img/icons/checkmark.png" alt="">
+                            <span class="quick-profile-top-badges-list-item-tooltip">
+                                        ich bin echt!
+                                        <svg height="16px" width="8px">
+                                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                                        </svg>
+                                    </span>
+                        </li>
+                        <li class="quick-profile-top-badges-list-item">
+                            <img src="public/assets/newcms/img/icons/heart.png" alt="">
+                            <span class="quick-profile-top-badges-list-item-tooltip">
+                                        Seit 2004
+                                        <svg height="16px" width="8px">
+                                            <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                                        </svg>
+                                    </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--<div class="quick-profile-top-friends">
+                <span class="after badges">Befreundet</span>
+            </div>-->
+            <div class="quick-profile-top-add-friend" onclick="addFriend('hazed');">
+                <span>Freund hinzufügen</span>
+            </div>
+        </div>
+        <div class="quick-profile-center">
+            <ul class="quick-profile-center-nav">
+                <li class="quick-profile-center-nav-item active" id="flughafen_quickProfileTab_1_button" onclick="toggleQuickProfileWindows('flughafen', 'quickProfileTab_1')">Habbo Infos</li>
+                <li class="quick-profile-center-nav-item" id="flughafen_quickProfileTab_2_button" onclick="toggleQuickProfileWindows('flughafen', 'quickProfileTab_2')">Gemeinsame Freunde</li>
+                <li class="quick-profile-center-nav-item" id="flughafen_quickProfileTab_3_button" onclick="toggleQuickProfileWindows('flughafen', 'quickProfileTab_3')">Gemeinsame Gruppen</li>
+            </ul>
+        </div>
+        <div class="quick-profile-bottom">
+            <div class="quick-profile-bottom-infos active" id="flughafen_quickProfileTab_1">
+                <ul class="quick-profile-bottom-info-nav">
+                    <li class="quick-profile-bottom-info-nav-item active" id="flughafen_quickProfileBottomInfoList_1_button" onclick="toggleQuickProfileInfoWindows('flughafen', 'quickProfileBottomInfoList_1')">Wohlstand</li>
+                    <li class="quick-profile-bottom-info-nav-item" id="flughafen_quickProfileBottomInfoList_2_button" onclick="toggleQuickProfileInfoWindows('flughafen', 'quickProfileBottomInfoList_2')">Aktivität</li>
+                    <li class="quick-profile-bottom-info-nav-item" id="flughafen_quickProfileBottomInfoList_3_button" onclick="toggleQuickProfileInfoWindows('flughafen', 'quickProfileBottomInfoList_3')">Persönliches</li>
+                    <li class="quick-profile-bottom-info-nav-item" id="flughafen_quickProfileBottomInfoList_4_button" onclick="toggleQuickProfileInfoWindows('flughafen', 'quickProfileBottomInfoList_4')">Bezieungen</li>
+                </ul>
+                <ul class="quick-profile-bottom-info-list active" id="flughafen_quickProfileBottomInfoList_1">
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before credits">Taler:</span>
+                        <p>123.232.323</p>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before diamonds">Diamanten:</span>
+                        <p>123.232.323</p>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before flame">Flammen:</span>
+                        <p>123.232.323</p>
+                    </li>
+                </ul>
+                <ul class="quick-profile-bottom-info-list" id="flughafen_quickProfileBottomInfoList_2">
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before chat">Aktivitätspunkte:</span>
+                        <p>12.345</p>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before heart">Registiert am:</span>
+                        <p>01.01.2004</p>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before frank_head">Zuletzt online:</span>
+                        <p>01.01.2014</p>
+                    </li>
+                </ul>
+                <ul class="quick-profile-bottom-info-list" id="flughafen_quickProfileBottomInfoList_3">
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before head">Freunde:</span>
+                        <p>123</p>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before badges">Badges:</span>
+                        <p>1.233</p>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before furni">Möbel:</span>
+                        <p>123.232</p>
+                    </li>
+                </ul>
+                <ul class="quick-profile-bottom-info-list" id="flughafen_quickProfileBottomInfoList_4">
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before love">Lieblinge:</span>
+                        <ul class="quick-profile-user-list">
+                            <li class="quick-profile-user-list-item">
+                                <a href="profile.html"><span class="after dev">PixelDixel</span></a>
+                        </li></ul>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before happy">Gute Freunde:</span>
+                        <ul class="quick-profile-user-list">
+                            <li class="quick-profile-user-list-item">
+                                <a href="profile.html"><span class="after dev">PixelDixel</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="quick-profile-bottom-info-list-item">
+                        <span class="quick-profile-bottom-info-list-item-header before skull">Erzfeinde:</span>
+                        <ul class="quick-profile-user-list">
+                            <li class="quick-profile-user-list-item">
+                                <a href="profile.html"><span class="after dev">PixelDixel</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="quick-profile-bottom-friends" id="flughafen_quickProfileTab_2">
+                <ul class="quick-profile-bottom-friends-list">
+                    <li class="quick-profile-bottom-friends-list-item">
+                        <a href="profile.html">
+                            <div class="quick-profile-bottom-friends-list-item-img-wrapper">
+                                <img class="quick-profile-bottom-friends-list-item-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=sh-290-62.ch-804-68.hr-155-45.hd-180-1026.lg-275-1193" alt="">
+                                <img class="quick-profile-bottom-friends-list-item-img-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                            </div>
+                            <div class="quick-profile-bottom-friends-list-item-infos-wrapper">
+                                <span class="after dev">PixelDixel</span>
+                                <p>Niemand überlebt das Leben...</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="quick-profile-bottom-friends-list-item">
+                        <a href="profile.html">
+                            <div class="quick-profile-bottom-friends-list-item-img-wrapper">
+                                <img class="quick-profile-bottom-friends-list-item-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=sh-290-62.ch-804-68.hr-155-45.hd-180-1026.lg-275-1193" alt="">
+                                <img class="quick-profile-bottom-friends-list-item-img-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                            </div>
+                            <div class="quick-profile-bottom-friends-list-item-infos-wrapper">
+                                <span class="after dev">PixelDixel</span>
+                                <p>Niemand überlebt das Leben...</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="quick-profile-bottom-friends-list-item">
+                        <a href="profile.html">
+                            <div class="quick-profile-bottom-friends-list-item-img-wrapper">
+                                <img class="quick-profile-bottom-friends-list-item-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=sh-290-62.ch-804-68.hr-155-45.hd-180-1026.lg-275-1193" alt="">
+                                <img class="quick-profile-bottom-friends-list-item-img-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                            </div>
+                            <div class="quick-profile-bottom-friends-list-item-infos-wrapper">
+                                <span class="after dev">PixelDixel</span>
+                                <p>Niemand überlebt das Leben...</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="quick-profile-bottom-friends-list-item">
+                        <a href="profile.html">
+                            <div class="quick-profile-bottom-friends-list-item-img-wrapper">
+                                <img class="quick-profile-bottom-friends-list-item-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=sh-290-62.ch-804-68.hr-155-45.hd-180-1026.lg-275-1193" alt="">
+                                <img class="quick-profile-bottom-friends-list-item-img-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                            </div>
+                            <div class="quick-profile-bottom-friends-list-item-infos-wrapper">
+                                <span class="after dev">PixelDixel</span>
+                                <p>Niemand überlebt das Leben...</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="quick-profile-bottom-friends-list-item">
+                        <a href="profile.html">
+                            <div class="quick-profile-bottom-friends-list-item-img-wrapper">
+                                <img class="quick-profile-bottom-friends-list-item-img-habbo" src="https://images.habbo.st/habbo-imaging/avatarimage.php?figure=sh-290-62.ch-804-68.hr-155-45.hd-180-1026.lg-275-1193" alt="">
+                                <img class="quick-profile-bottom-friends-list-item-img-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                            </div>
+                            <div class="quick-profile-bottom-friends-list-item-infos-wrapper">
+                                <span class="after dev">PixelDixel</span>
+                                <p>Niemand überlebt das Leben...</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="quick-profile-bottom-groups" id="flughafen_quickProfileTab_3">
+                <ul class="quick-profile-bottom-groups-list">
+                    <li class="quick-profile-bottom-groups-item">
+                        <div class="quick-profile-bottom-groups-item-wrapper">
+                            <img class="quick-profile-bottom-groups-item-badge" src="public/assets/newcms/img/groups/1.png" alt="">
+                            <img class="quick-profile-bottom-groups-item-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                        </div>
+                        <span class="quick-profile-bottom-groups-item-tooltip">
+                                    Philo - Leben und leben lassen...
+                                    <svg height="16px" width="8px">
+                                        <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                                    </svg>
+                                </span>
+                    </li>
+                    <li class="quick-profile-bottom-groups-item">
+                        <div class="quick-profile-bottom-groups-item-wrapper">
+                            <img class="quick-profile-bottom-groups-item-badge" src="public/assets/newcms/img/groups/1.png" alt="">
+                            <img class="quick-profile-bottom-groups-item-background" src="public/assets/newcms/img/rooms/1.png" alt="">
+                        </div>
+                        <span class="quick-profile-bottom-groups-item-tooltip">
+                                    Philo - Leben und leben lassen...
+                                    <svg height="16px" width="8px">
+                                        <path d="M 0 8 L 8 0 L 8 16 L 0 8"></path>
+                                    </svg>
+                                </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay" id="quickProfileOverlay" onclick="closeQuickProfile()"></div>
+
+<script type="text/javascript" src="https://habbo.st/public/assets/pix/js/app.js?time=1634248913"></script>
+
+
+</body></html>
